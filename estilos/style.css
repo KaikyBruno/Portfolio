@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+html, body {
+    background-color: #121212;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    max-height: 70px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+#icone {
+    width: 70%;
+    height: 100%;
+    
+}
+#icone > a {
+    font-family: Calibri;
+    text-decoration: none;
+    font-size: 2.5em;
+    padding-left: 20px; 
+}
+#nav{
+    width: 30%;
+    height: 100%;
+    margin-top: 10px;
+    
+}
+#nav > a {
+    font-family: Calibri;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-left: 15px;
+}
+#nav > a:hover {
+    color: rgba(204, 24, 204, 0.795);
+}
