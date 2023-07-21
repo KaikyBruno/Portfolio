@@ -36,7 +36,8 @@ header {
     width: 30%;
     height: 100%;
     margin-top: 10px;
-    
+    text-align: end;
+    padding-right: 20px;
 }
 #nav > a {
     font-family: Calibri;
@@ -47,3 +48,79 @@ header {
 #nav > a:hover {
     color: rgba(204, 24, 204, 0.795);
 }
+main {
+    
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 89vh;
+}
+#primeiro {
+    width: 60%;
+    height: 100%;
+    padding-left: 40px;
+    margin-top: 180px;
+}
+#primeiro > h1 {
+    max-width: 400px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+}
+#primeiro > p {
+    padding: 5px 0px 10px 0px;
+    color: rgba(255, 255, 255, 0.568);
+}
+#primeiro > div {
+    padding-left: 30px;
+}
+#primeiro img {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+#primeiro span {
+    color: rgba(204, 24, 204, 0.795);
+}
+#git-link {
+    margin-left: -30px;
+}
+#github {
+    background-color: rgba(204, 24, 204, 0.795);
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    padding: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#github:hover {
+    background-color: rgb(131, 9, 131);
+    color: rgba(255, 255, 255, 0.555);
+    transition: 0.3s;
+}
+#linkedin {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 160px;
+    padding: 20px;
+    cursor: pointer;
+}
+#linkedin:hover {
+    border: 2px solid white;
+    transition: 0.1s;
+}
+#segundo {
+    
+    width: 40%;
+    height: 100%;
+    background: url(../imagens/boneco.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
