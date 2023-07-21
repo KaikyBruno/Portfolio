@@ -20,7 +20,7 @@ header {
     max-height: 70px;
     width: 80%;
     margin: auto;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 #icone {
     width: 60%;
@@ -46,6 +46,12 @@ header {
 }
 #nav > a:hover {
     color: rgba(204, 24, 204, 0.795);
+}
+#lua{
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-left: 25px;
+    cursor: pointer;
 }
 main {
     width: 80%;
@@ -174,7 +180,7 @@ main {
     color: rgb(255, 44, 255);
     transform: scale(1.1);
 }
-#projetos {
+.projetos {
     width: 100%;
     height: 100vh;
     
@@ -185,13 +191,16 @@ main {
     font-size: 3em;
     margin-bottom: 66px;
 }
-#projetos-container{
+.projetos-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
-    ;
     height: 300px;
+}
+#display-none {
+    display: none;
+    margin-top: 40px;
 }
 .projetos {
     width: 220px;
@@ -240,7 +249,7 @@ main {
 .projeto-github:hover {
     background-color: rgb(131, 9, 131);
     color: rgba(255, 255, 255, 0.555);
-    transition: 0.3s;
+    transition: 0.3s; 
     transform: scale(1.1);
 }
 .projeto-preview {
@@ -258,3 +267,71 @@ main {
     transform: scale(1.1);
 }
 
+#mais-projetos {
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: rgba(204, 24, 204, 0.795);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#mais-projetos:hover {
+    background-color: rgb(131, 9, 131);
+    color: rgba(255, 255, 255, 0.555);
+    transition: 0.3s; 
+    transform: scale(1.1);
+}
+footer {
+    text-align: center;
+    color: rgba(204, 24, 204, 0.795);
+    margin-top: 90px;
+    padding-bottom: 10px;
+}
+footer > a {
+    text-decoration: none;
+    color: rgba(204, 24, 204, 0.795);
+}
+footer > a:hover {
+    text-decoration: underline rgba(204, 24, 204, 0.795);
+}
+
+/*Aqui vai ser o modo Light*/
+
+.light#main body {
+    background-color:lightgrey;
+}
+.light#main  header {
+    background-color: lightgrey;
+}
+.light#main  main {
+    background-color: lightgrey;
+}
+.light#main p {
+    color: black;
+}
+.light#main a {
+    color: black;
+}
+.light#main a:hover {
+    color:#27AE60;
+}
+.light#main h1 {
+    color: black;
+}
+.light#main #lua {
+    color: black;
+}
+.light#main span{
+    color: #27AE60;
+}
+.light#main #github {
+    background-color: #27AE60;
+}
+.light#main #linkedin {
+    border: 1px solid black;
+    color: black;
+}

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="main">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KaikyBruno</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header>
+<body >
+    <header >
             <div id="icone">
-                <img src="imagens/logo.webp" alt="Logo">
+                <img src="imagens/logo.webp" id="imagem" alt="Logo">
             </div>
             <div id="nav">
                 <a href="#sobre-mim">Sobre mim</a>
                 <a href="#projetos">Projetos</a>
-                <a href="">Contato</a>
+                <i id="lua" class="fa-solid fa-moon"></i>
+                
             </div>
     </header>
-    <main>
+    <main >
         <div class="container">
             <div id="primeiro">
                 <h1 >
@@ -63,7 +65,7 @@
         </div>
         <div id="projetos">
             <h1>Projetos</h1>
-            <div id="projetos-container">
+            <div class="projetos-container">
                 <div class="projetos">
                     <p class="projetos-p">
                         Linguagem Predominante
@@ -78,14 +80,53 @@
                     </div>
                 </div>
                 <div class="projetos">
-                    
+                    <p class="projetos-p">
+                        Linguagem Predominante
+                        <img src="imagens/html.png" alt="Logo JavaScript" width="120px" height="120px">
+                    </p>
+                    <p class="projetos-p">
+                        Cordel
+                    </p>
+                    <div class="projeto-button">
+                        <a href="https://github.com/KaikyBruno/Cordel" target="_blank"><input type="submit" value="GitHub" class="projeto-github"></a>
+                        <a href=" https://kaikybruno.github.io/Cordel/" target="_blank"><input type="submit" value="Preview" class="projeto-preview"></a>
+                    </div>
                 </div>     
-                <div class="projetos"> 
-                    
+                <div class="projetos">
+                    <p class="projetos-p">
+                        Linguagem Predominante
+                        <img src="imagens/html.png" alt="Logo JavaScript" width="120px" height="120px">
+                    </p>
+                    <p class="projetos-p">
+                        Formulario
+                    </p>
+                    <div class="projeto-button">
+                        <a href="https://github.com/KaikyBruno/formulario" target="_blank"><input type="submit" value="GitHub" class="projeto-github"></a>
+                        <a href=" https://kaikybruno.github.io/formulario/" target="_blank"><input type="submit" value="Preview" class="projeto-preview"></a>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div id="display-none" class="projetos-container">
+                <div class="projetos">
+                    
+                </div>
+                <div class="projetos">
+                    
+                </div>     
+                <div class="projetos">
+
+                </div>
+            </div>
+            
+            <input id="mais-projetos" type="submit" value="Mais Projetos" onclick="projetos ()">
+            
+            <footer>
+                <a href="https://github.com/KaikyBruno" target="_blank">&copy;Kaiky</a>
+            </footer>
     </main>
     
+
+    <script src="script/script.js"></script>
 </body>
 </html>
