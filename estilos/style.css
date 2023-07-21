@@ -125,7 +125,7 @@ main {
 #sobre-mim {
     margin-top: 50px;
     text-align: center;
-    height: 1000px;
+    
 }
 #sobre-mim-historia  h1 {
     font-size: 3.5em;
@@ -174,5 +174,87 @@ main {
     color: rgb(255, 44, 255);
     transform: scale(1.1);
 }
+#projetos {
+    width: 100%;
+    height: 100vh;
+    
+}
+#projetos > h1 {
+    text-align: center;
+    margin-top: 166px;
+    font-size: 3em;
+    margin-bottom: 66px;
+}
+#projetos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    ;
+    height: 300px;
+}
+.projetos {
+    width: 220px;
+    height: 290px;
+    border-radius: 4px;
+    box-shadow:rgba(0, 0, 0, 0.25) 8px 5px 22px 5px;
+    background-color: #212121; 
+}
+.projetos:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 6px rgba(255, 44, 255, 0.562);
+    border: 2px solid rgba(204, 24, 204, 0.795);
+    transition: 0.6s ease;
+}
+.projetos-p {
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 20px;
 
+}
+.projetos img {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+.projetos img:hover {
+    transform: translate(0% ,-4%);
+    transition: 0.5s;
+}
+.projeto-button {
+    margin-top: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.projeto-github {
+    background-color: rgba(204, 24, 204, 0.795);
+    border: none;
+    width: 80px;
+    padding:15px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+.projeto-github:hover {
+    background-color: rgb(131, 9, 131);
+    color: rgba(255, 255, 255, 0.555);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.projeto-preview {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 80px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+.projeto-preview:hover {
+    border: 2px solid white;
+    transition: 0.1s;
+    transform: scale(1.1);
+}
 
