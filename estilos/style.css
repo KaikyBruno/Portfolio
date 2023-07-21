@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 html, body {
     background-color: #121212;
@@ -22,18 +23,16 @@ header {
     margin-top: 20px;
 }
 #icone {
-    width: 70%;
+    width: 60%;
     height: 100%;
     
 }
-#icone > a {
-    font-family: Calibri;
-    text-decoration: none;
-    font-size: 2.5em;
-    padding-left: 20px; 
+#icone  img {
+    display: block;
+    margin-top: 10px;
 }
 #nav{
-    width: 30%;
+    width: 40%;
     height: 100%;
     margin-top: 10px;
     text-align: end;
@@ -43,13 +42,12 @@ header {
     font-family: Calibri;
     font-size: 1.2em;
     text-decoration: none;
-    padding-left: 15px;
+    padding-left: 25px;
 }
 #nav > a:hover {
     color: rgba(204, 24, 204, 0.795);
 }
 main {
-    
     width: 80%;
     height: 100%;
     margin: auto;
@@ -72,7 +70,7 @@ main {
     font-size: 3em;
 }
 #primeiro > p {
-    padding: 5px 0px 10px 0px;
+    padding: 5px 0px 20px 0px;
     color: rgba(255, 255, 255, 0.568);
 }
 #primeiro > div {
@@ -101,6 +99,7 @@ main {
     background-color: rgb(131, 9, 131);
     color: rgba(255, 255, 255, 0.555);
     transition: 0.3s;
+    transform: scale(1.1);
 }
 #linkedin {
     background-color: transparent;
@@ -113,9 +112,9 @@ main {
 #linkedin:hover {
     border: 2px solid white;
     transition: 0.1s;
+    transform: scale(1.1);
 }
 #segundo {
-    
     width: 40%;
     height: 100%;
     background: url(../imagens/boneco.webp);
@@ -123,4 +122,57 @@ main {
     background-position: center center;
     background-size: contain;
 }
+#sobre-mim {
+    margin-top: 50px;
+    text-align: center;
+    height: 1000px;
+}
+#sobre-mim-historia  h1 {
+    font-size: 3.5em;
+}
+#sobre-mim-historia  p {
+    font-size: 1.2em;
+    padding-top: 66px;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+#minhas-hab > h1 {
+    margin-top: 168px;
+    font-size: 3.2em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#minhas-hab-bloco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #212121;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    padding-top: 20px;
+    
+}
+#minhas-hab-bloco svg {
+    width: 100px;
+    height: 110px;
+}
+#minhas-hab-bloco #svg-color:hover {
+    fill: #f1f1f1;
+}
+#minhas-hab-bloco svg:hover {
+    stroke: #f1f1f1;
+    transform: scale(1.3);
+}
+#minhas-hab-bloco  h1 {
+    color: rgba(121, 33, 121, 0.795);
+    
+}
+#minhas-hab-bloco  h1:hover {
+    color: rgb(255, 44, 255);
+    transform: scale(1.1);
+}
+
 
