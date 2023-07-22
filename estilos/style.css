@@ -59,7 +59,7 @@ header {
     text-decoration: none;
     padding-left: 25px;
     cursor: pointer;
-    display: inline-block;
+    
     
 }
 main {
@@ -426,7 +426,7 @@ footer > a:hover {
 
 /*Começa o Media Query*/
 
-@media screen and (min-width: 300px) and (max-width: 722px){
+@media screen and (min-width: 300px) and (max-width: 900px){
     #hamburguer {
         display: flex;
         justify-content: flex-end;
@@ -439,14 +439,11 @@ footer > a:hover {
         cursor: pointer;
         position: absolute;
     }
-    .none {
-        display: none;        
-    } 
-    #lua {
-        position: absolute;
-        top: 350px;
-        padding-left: 10px;
+    #nav {
         display: none;
+    }
+    #lua1 {
+        cursor: pointer;
     }
     #background-hamburguer {
         position: absolute;
@@ -472,5 +469,82 @@ footer > a:hover {
     }
     #background-hamburguer > i {
         padding-left: 0px;
+    }
+    #primeiro {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 140px;
+    }
+    #primeiro > h1 {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    #primeiro p {
+        padding-top: 30px;
+        text-align: center;
+    }
+    #primeiro div {
+        padding: 0px;
+    }
+    #git-link {
+        padding-left: 0px;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #github {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .container > #segundo {
+        display: none;
+        width: 0%;
+    }
+    #minhas-hab > h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+    #minhas-hab-bloco {
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+    }
+    #minhas-hab-bloco #svg-color {
+        margin-top: 15px;
+        
+    }
+    #minhas-hab-bloco .svg-ultimo {
+        margin-bottom: 20px;
+    }
+    #minhas-hab-bloco svg {
+        margin-top: 30px ;
+    }
+    .projetos-container {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .projetos {
+        margin-bottom: 10px;
+    }
+    #display-none {
+        margin-top: 0px;
+    }
+    #button-arrow {
+        left: 86%;
+    }
+    .light#main #background-hamburguer {
+        background: linear-gradient(45deg, #27AE60 23%, rgba(0, 0, 0, 0.9) 100%);
+    }
+    .light#main #background-hamburguer > a {
+        color: white;
+    }
+    .light#main #background-hamburguer > a:hover {
+        color: #b2c2b9;
     }
 }

@@ -24,6 +24,21 @@ modedark.addEventListener ("click", () => {
         main.classList.remove ('light')
     }
 }) 
+const modedarkmobile = document.getElementById ('lua1')
+
+modedarkmobile.addEventListener ('click', () => {
+    if (modedarkmobile.classList.contains ('fa-moon')) {
+        modedarkmobile.classList.remove ('fa-moon')
+        modedarkmobile.classList.add ('fa-sun')
+        main.classList.add ('light')
+    }else {
+        modedarkmobile.classList.remove ('fa-sun')
+        modedarkmobile.classList.add ('fa-moon')
+        main.classList.remove ('light')
+    }
+})
+
+
 
 const btn = document.getElementById ('button-arrow')
 
