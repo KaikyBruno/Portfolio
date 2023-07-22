@@ -8,16 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
+    <div id="background-hamburguer">
+        <a href="#sobre-mim">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        
+    </div>
     <header >
+        
             <div id="icone">
                 <img src="imagens/logo.webp" id="imagem" alt="Logo">
             </div>
+            
             <div id="nav">
-                <a href="#sobre-mim">Sobre mim</a>
-                <a href="#projetos">Projetos</a>
-                <i id="lua" class="fa-solid fa-moon"></i>
                 
+                <a href="#sobre-mim" class="none">Sobre mim</a>
+                <a href="#projetos" class="none">Projetos</a>
+                <i id="lua" class="fa-solid fa-moon"></i>
             </div>
+            <div id="hamburguer">
+                <i id="icon-hamburguer" class="fa-solid fa-bars" onclick="hamburguer ()"></i>
+            </div>
+            
     </header>
     <main >
         <div class="container">
@@ -121,6 +132,10 @@
             
             <input id="mais-projetos" type="submit" value="Mais Projetos" onclick="projetos ()">
             
+            <div id="button-arrow">
+                <i class="fa-solid fa-arrow-up" .></i>
+            </div>
+
             <footer>
                 <a href="https://github.com/KaikyBruno" target="_blank">&copy;Kaiky</a>
             </footer>
