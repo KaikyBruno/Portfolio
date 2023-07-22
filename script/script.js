@@ -76,3 +76,8 @@ hamburguer.addEventListener ('click', () => {
         
     }
 })
+
+window.area = ScrollReveal ({ reset: true })
+
+area.reveal ('.area-1')
+area.reveal ('.area-2', {duration : 1000})

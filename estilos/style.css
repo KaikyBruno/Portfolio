@@ -14,7 +14,17 @@ html, body {
     background-color: #121212;
     width: 100%;
 }
-
+.area-1, .area-2 {
+    visibility: hidden;
+}
+::-webkit-scrollbar {
+    background-color: #121212;
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(204, 24, 204, 0.795);
+    border-radius: 10px;
+}
 header {
     display: flex;
     flex-direction: row;
@@ -329,6 +339,15 @@ footer > a:hover {
 
 /*Aqui vai ser o modo Light*/
 
+.light#main ::-webkit-scrollbar {
+    background-color: lightgrey;
+    width: 15px;
+}
+.light#main ::-webkit-scrollbar-thumb {
+    background-color: #27AE60;
+    border-radius: 10px;
+}
+
 .light#main body {
     background-color:lightgrey;
 }
@@ -427,6 +446,13 @@ footer > a:hover {
 /*Começa o Media Query*/
 
 @media screen and (min-width: 300px) and (max-width: 900px){
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    ::-webkit-scrollbar-thumb {
+       display: none;
+    }
     #hamburguer {
         display: flex;
         justify-content: flex-end;
