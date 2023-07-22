@@ -12,7 +12,6 @@ function projetos () {
 
 const modedark = document.getElementById ('lua')
 const main = document.getElementById('main')
-const imagem = document.getElementById ('imagem')
 
 modedark.addEventListener ("click", () => {
     if (modedark.classList.contains ('fa-moon')) {
@@ -25,11 +24,6 @@ modedark.addEventListener ("click", () => {
         main.classList.remove ('light')
     }
 }) 
-if (window.scrollTo(0,0)){
-    btn.style.display = none 
-} else {
-    
-}
 
 const btn = document.getElementById ('button-arrow')
 
