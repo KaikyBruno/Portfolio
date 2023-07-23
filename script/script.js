@@ -1,11 +1,14 @@
 function projetos () {
     let display = document.getElementById ("display-none")
+    let display1 = document.getElementById ("display-none1")
     let button = document.getElementById ('mais-projetos')
     if (display.style.display == 'flex') {
         display.style.display = 'none'
+        display1.style.display = 'none'
         button.value = 'Mais Projetos'
     } else {
         display.style.display = 'flex'
+        display1.style.display = 'flex'
         button.value = 'fechar'
     }
 }
